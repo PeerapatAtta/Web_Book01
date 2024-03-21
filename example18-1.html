@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <h1>DOM</h1>
+    <div id="dv1">Hello</div>
+    <div id="dv2"><span>World</span></div>
+    <script>
+        var dv1 = document.getElementById('dv1');
+        var text = dv1.innerHTML;
+        alert(text);
+
+        var dv2 = document.querySelector('#dv2');
+        var text2 = dv2.innerHTML;
+        alert(text2);
+
+
+    </script>
+    
+</body>
+</html>

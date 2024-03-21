@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script>
+            function isNumber(n){
+                if(isNaN(n)){
+                    return false;
+                };
+                return true;
+            };
+            function circleArea(radius) {
+                if (!isNumber(radius)) {
+                    return;
+                };
+                return 3.14*(radius**2);
+            }
+            function rectArea(width,height){
+                if(!isNumber(width)||!isNumber(height)){
+                    return;
+                };
+                return width*height;
+            };
+            function triagleArea(base,height){
+                if(!isNumber(base)||!isNumber(height)){
+                    return;
+                };
+                return 0.5*base*height;
+            };
+        </script>
+    </head>
+    <body>
+        <script>
+            document.write(
+                'Circle raius = 15 m <br>'+
+                'Circle Area = ' + circleArea(15) + 'm <br><br>'+
+                '<b>Retengular: </b><br> '+
+                'Width = 15 m, Height = 20 m <br> '+
+                'Area = '+rectArea(15,20)+'m<br><br>'+
+                '<b>Triagle: </b><br> '+
+                'Base = 15 m, Height = 20 m <br> '+
+                'Area = '+triagleArea(15,20)+'m<br><br>'+
+                '<hr>'+
+                '<b>Triagle: </b><br> '+
+                'Base = w m, Height = 20 m <br> '+
+                'Area = '+triagleArea('w',20)+' m<br><br>'
+            );
+
+        </script>
+    </body>
+</html>

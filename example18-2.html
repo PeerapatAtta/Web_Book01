@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <span id="sp1">Hello</span>
+    <span id="sp2">World</span>
+    <br><br>
+    <button id="bt">Start</button>
+    <script>
+        document.getElementById('sp1').innerHTML='สวัสดีค่ะ คุณ';
+        document.getElementById('sp2').innerHTML='สมชาย';
+
+        var bt = document.querySelector('#bt');
+        if (bt.innerHTML=='Start') {
+            bt.innerHTML = 'Stop';            
+        }
+    </script>
+    
+</body>
+</html>

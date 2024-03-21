@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form * {
+            display:block;
+            margin-bottom: 10px;
+        }
+        [type=radio], label{
+            display: inline !important;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input id='text' type="text" value="JavaScript">
+        <textarea id="ta">ECMAScript</textarea>
+        <input id='radio' type="radio" value="Bootstrap">
+        <label for="radio">Bootstrap</label>
+        <select id="sel">
+            <option value="One">1</option>
+            <option value="Two" selected>2</option>
+        </select>
+    </form>
+    <hr>
+    <script>
+        var text = document.getElementById('text').value;
+        document.write('text value: '+text+'<br>');
+
+        var ta = document.getElementById('ta').value;
+        document.write('Textarea value: '+ta+'<br>');
+
+        var radio = document.getElementById('radio').value;
+        document.write('Radio value: '+radio+'<br>');
+
+        var sel = document.getElementById('sel').value;
+        document.write('select value: '+sel+'<br>');
+
+    </script>
+    
+</body>
+</html>

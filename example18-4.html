@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <form>
+        <input type="checkbox" value="bold" id="b">
+        <label for="b">bold</label>
+
+        <input type="checkbox" value="italic" id="i" checked>
+        <lable for="i">italic</lable>
+
+        <input type="checkbox" value="underline" id="u" checked>
+        <label for="u">underline</label>
+        <br>
+
+        <input type="radio" name="size" value="16" id="s16">
+        <label for="s16">16</label>
+
+        <input type="radio" name="size" value="18" id="s18" checked>
+        <label for="s18">18</label>
+
+        <input type="radio" name="size" value="20" id="s20">
+        <label for="s20">20</label>
+
+    </form>
+    <hr>
+    <script>
+        var chcks = document.querySelectorAll(
+            '[type="checkbox"]'
+        );
+        var chkVals = [];
+        for (i = 0; i < chcks.length; i++) {
+            if (chcks[i].checked) {
+                chkVals.push(chcks[i].value);
+            }
+        }
+        document.write(chkVals.join(',') + '<br>')
+
+        var rds = document.getElementsByName('size');
+        var rdsVals = [];
+        for (i = 0; i < rds.length; i++) {
+            if (rds[i].checked) {
+                rdsVals.push(rds[i].value);
+            };
+        };
+        document.write(rdsVals.join(','))
+
+    </script>
+
+</body>
+
+</html>

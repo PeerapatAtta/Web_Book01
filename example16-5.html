@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var number = parseInt(Math.random()*100);
+            var win = false;
+            var count = 1;
+            var maxGuess =7;
+            var guessNum;
+            var message ='';
+            var input='';
+
+            do{
+                input = prompt('Guess# '+count+' Please input number:');
+                guessNum = parseInt(input);
+
+                if(guessNum>number){message='Lower';}
+                else if(guessNum<number){message='More';}
+                else if (guessNum==number){message='Correct'; win=true;};
+
+                alert(message);
+
+                if(count==maxGuess){alert('Maximumn guesss: Game Over'); break;};
+
+                count++;
+
+            }while(!win);
+
+
+        </script>
+
+    </body>
+</html>

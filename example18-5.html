@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{margin: 20px;}
+        form *{font-size: 12pt;}
+        label{
+            display: inline-block;
+            width: 90px;
+        }
+        input{
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+    <script>
+        function checkPsw(){
+            let p1 = document.getElementById('psw1').value;
+            let p2 = document.getElementById('psw2').value;
+            if(p1!=p2){
+                alert('Password is incorrect. Please input again');
+            } else {
+                alert('Password is correct');
+            };
+        };
+    </script>
+</head>
+<body>
+    <form>
+        <label for="n1">Email: </label>
+        <input type="email"><br>
+
+        <label for="psw1">Password: </label>
+        <input type="password" id="psw1"><br>
+
+        <label for="psw2">Confirm<br>Password:</label>
+        <input type="password" id="psw2"><br>
+        <br>
+        <label></label>
+        <button type="button" onclick="checkPsw()">OK</button>
+    </form>
+    
+</body>
+</html>
