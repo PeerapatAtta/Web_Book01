@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 30px;
+        }
+
+        label {
+            display: inline-table;
+            width: 80px;
+            margin-bottom: 10px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Input Personal Data</h3>
+    <form method="post" action="read-chars.php">
+        <label for="login">E-Mail:</label>
+        <input type="email" name="login" id="login" size="30">
+        <br>
+        <label for="pswd">Password:</label>
+        <input type="password" name="pswd" id="pswd" size="30">
+        <br>
+        <label for="">Birthday:</label>
+        <input type="date" name="birthday" id="birthday">
+        <br>
+        <label for="sal">Salary:</label>
+        <input type="number" name="salary" id="sal" value="50000" disabled>
+        <br>
+        <label for="info">Information:</label>
+        <textarea name="info" id="info" rows="3" cols="30"></textarea>
+        <br><br>
+        <label></label>
+        <button>Save Data</button>
+    </form>
+
+</body>
+
+</html>
