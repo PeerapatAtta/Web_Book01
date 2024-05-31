@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example8-13</title>
+    <style>
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            font: 14px tahoma;
+        }
+        caption{
+            caption-side: top;
+        }
+        #c1{width: 40%;}
+        #c2{width: 25%;}
+        #c3{width: 15%;}
+        #c4{width: 20%;}
+        td,th{
+            border: dotted 1px gray;
+            padding: 5px;
+        }
+        thead{
+            background-color: steelblue;
+        }
+        tr.even {background-color: gainsboro;}
+        td:nth-child(n+2){text-align: right;}
+        tfoot{
+            background-color: lightsalmon;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Product List in Cart</caption>
+        <thead>
+            <tr>
+                <th id="c1">Name</th>
+                <th id="c2">Price</th>
+                <th id="c3">Number</th>
+                <th id="c4">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Clothes</td>
+                <td>500</td>
+                <td>2</td>
+                <td>1000</td>
+            </tr>
+            <tr class="even">
+                <td>Clothes</td>
+                <td>500</td>
+                <td>2</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Clothes</td>
+                <td>500</td>
+                <td>2</td>
+                <td>1000</td>
+            </tr>
+            <tr class="even">
+                <td>Clothes</td>
+                <td>500</td>
+                <td>2</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Belt</td>
+                <td>500</td>
+                <td>1</td>
+                <td>500</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td>4,500</td>
+                </tr>
+            </tfoot>
+
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
