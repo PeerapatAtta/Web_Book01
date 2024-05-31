@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>example8-13</title>
     <style>
-        table{
+        table {
             width: 400px;
             border-collapse: collapse;
             font: 14px tahoma;
         }
-        caption{
+
+        caption {
             caption-side: top;
         }
-        #c1{width: 40%;}
-        #c2{width: 25%;}
-        #c3{width: 15%;}
-        #c4{width: 20%;}
-        td,th{
+
+        #c1 {
+            width: 40%;
+        }
+
+        #c2 {
+            width: 25%;
+        }
+
+        #c3 {
+            width: 15%;
+        }
+
+        #c4 {
+            width: 20%;
+        }
+
+        td,
+        th {
             border: dotted 1px gray;
             padding: 5px;
         }
-        thead{
+
+        thead {
             background-color: steelblue;
         }
-        tr.even {background-color: gainsboro;}
-        td:nth-child(n+2){text-align: right;}
-        tfoot{
+
+        tr.even {
+            background-color: gainsboro;
+        }
+
+        td:nth-child(n+2) {
+            text-align: right;
+        }
+
+        tfoot {
             background-color: lightsalmon;
             font-weight: bold;
             color: blue;
         }
     </style>
 </head>
+
 <body>
     <table>
         <caption>Product List in Cart</caption>
@@ -75,16 +100,17 @@
                 <td>1</td>
                 <td>500</td>
             </tr>
-            <tfoot>
-                <tr>
-                    <td colspan="3">Total</td>
-                    <td>4,500</td>
-                </tr>
-            </tfoot>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>4,500</td>
+            </tr>
+        </tfoot>
 
 
         </tbody>
     </table>
-    
+
 </body>
+
 </html>
