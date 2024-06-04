@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example10-9</title>
+    <style>
+        [type="radio"][name="payment"]+label{
+            font-weight: bold;
+        }
+        [type="radio"][name="card"]+label{
+            font-style: italic;
+        }
+        #divCard{
+            padding-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Pay Method</h3>
+    <input type="radio" name="payment" id="">
+    <label for="">Mobile Banking</label>
+    <br>
+    <input type="radio" name="payment" id="">
+    <label for="">Credit Card</label>
+    <div id="divCard">
+        <input type="radio" name="card" id="">
+        <label for="">VISA</label>
+        <br>
+        <input type="radio" name="card" id="">
+        <label for="">MAsterCard</label>
+    </div>
+</body>
+</html>
