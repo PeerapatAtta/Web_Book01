@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example10-11</title>
+    <style>
+        input, textarea {
+            border: solid 1px green;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        :required{
+            background: lavender;
+        }
+        :read-write+span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" required><span>&nbsp;*</span>
+    <br><br>
+    <input type="text">
+    <br><br>
+    <input type="text">
+    <br><br>
+    <textarea name="" id="" required></textarea><span>&nbsp;*</span>
+    <br><br>
+    <button>OK</button>
+</body>
+</html>
