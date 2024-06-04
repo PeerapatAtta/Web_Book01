@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example10-14</title>
+    <style>
+        form :not(button) {
+            border: solid 1px green;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 5px;
+            background: beige;
+        }
+        button {
+            background-color: navy;
+            color: white;
+            border-radius: 5px;
+            padding: 3px 5px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        tr:first-child{
+            background-color: green;
+            color: white;
+        }
+        td {
+            min-width: 100px;
+            padding: 5px;
+        }
+        td:not(:first-child){
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" name="" id="">
+        <br>
+        <textarea name="" id=""></textarea>
+        <br>
+        <select>
+            <option>One</option>
+        </select>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Remain</th>
+        </tr>
+        <tr>
+            <td>HTML5</td>
+            <td>550</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>CSS3</td>
+            <td>330</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>1,000</td>
+            <td>10</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
